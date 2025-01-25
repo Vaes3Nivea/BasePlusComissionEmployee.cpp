@@ -6,7 +6,7 @@
 #ifndef BASEPLUS_H
 #define BASEPLUS_H
 
-#include <string> // classe string padrão C++
+#include <string> 
 using std::string;
 
 class BasePlusCommissionEmployee
@@ -15,36 +15,37 @@ public:
        BasePlusCommissionEmployee( const string &, const string &, 
        const string &, double = 0.0, double = 0.0, double = 0.0 );
        
-       void setFirstName( const string & ); // configura o nome
-       string getFirstName() const; // retorna o nome
+       void setFirstName( const string & );
+       string getFirstName() const; 
        
-       void setLastName( const string & ); // configura o sobrenome
-       string getLastName() const; // retorna o sobrenome
+       void setLastName( const string & ); 
+       string getLastName() const; 
        
-       void setSocialSecurityNumber( const string & ); // configura o número do seguro social
-       string getSocialSecurityNumber() const; //retorna o número do seguro social
+       void setSocialSecurityNumber( const string & ); 
+       string getSocialSecurityNumber() const; 
        
-      void setGrossSales( double ); // configura a quantidade de vendas brutas
-      double getGrossSales() const; // retorna a quantidade de vendas brutas
+      void setGrossSales( double ); 
+      double getGrossSales() const; 
       
-      void  setCommissionRate( double ); // configura a taxa de comissão
-      double getCommissionRate() const; //retorna a taxa de comissão
+      void  setCommissionRate( double ); 
+      double getCommissionRate() const; 
       
-      void setBaseSalary( double ); // configura o salário-base
-      double getBaseSalary() const; // retorna o salário-base
+      void setBaseSalary( double ); 
+      double getBaseSalary() const; 
       
-      double esrnings() const; // calcula os rendimentos
-      void print() const; // imprime o objeto BasePlusCommissionEmployee
+      double esrnings() const; 
+      void print() const; 
 private:
         string firstName;
         string lastName;
         string socialSecurityNumber;
-        double grossSales; // vendas brutas semanais
-        double commissionRate; // porcentagem da comissão
-        double baseSalary; // salário-base
-}; // fim da classe BasePlusCommissionEmployee
+        double grossSales; 
+        double commissionRate; 
+        double baseSalary;
+}; 
 
 #endif 
       
+       
        
         
